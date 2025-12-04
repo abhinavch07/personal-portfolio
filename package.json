@@ -21,13 +21,4 @@
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   },
-  {
-  "name": "my-app",
-  "version": "1.0.0",
-  "scripts": {
-    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css"
-  },
-  "devDependencies": {
-    "tailwindcss": "^3.4.1"
-  }
 }
