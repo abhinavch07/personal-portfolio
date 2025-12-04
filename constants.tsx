@@ -3,70 +3,71 @@ import { Experience, Skill, SocialLink, Education, Certification, Extracurricula
 
 export const HERO_DATA = {
   name: "Abhinav Choudhary",
-  role: "Full Stack Developer",
-  tagline: "Building digital experiences that matter.",
-  bio: "I'm a passionate developer who loves building scalable web applications and exploring new technologies. Currently focused on React ecosystem and AI integration."
+  role: "Program Manager",
+  tagline: "Delivering clarity and momentum from idea to impact.",
+  bio: "Program Manager with more than a decade of experience aligning diverse teams around shared goals. I lead with clarity, trust, and structured execution to turn strategic vision into sustained, measurable impact."
 };
 
 export const CONTACT_INFO = {
-  email: "abhinav.choudhary@example.com",
-  phone: "+91 98765 43210",
+  email: "abhinavchoudhary07@gmail.com",
+  phone: "+91 9999361976",
   address: "New Delhi, India",
 };
 
 export const SKILLS: Skill[] = [
   { 
-    title: "Frontend Development", 
-    description: "React.js | Next.js | TypeScript | Tailwind CSS | Redux Toolkit | HTML5 | CSS3" 
+    title: "Program Leadership & Strategy", 
+    description: "Multi-program portfolio management | Transformational initiatives | Strategic planning | Benefits realisation | Program governance | Executive reporting." 
   },
   { 
-    title: "Backend Development", 
-    description: "Node.js | Express.js | PostgreSQL | MongoDB | REST APIs | GraphQL" 
+    title: "Program & Project Management", 
+    description: "Multi-project portfolio management | End-to-end program execution | Agile/Scrum methodologies | Sprint planning & retrospectives | Release management | Timeline adherence" 
   },
   { 
-    title: "Tools & DevOps", 
-    description: "Git & GitHub | Docker | AWS (EC2, S3) | CI/CD Pipelines | VS Code | Postman" 
+    title: "Stakeholder Engagement & Vendor Management", 
+    description: "·       Cross-functional collaboration | Executive communication | Requirement gathering | Expectation management | Building trust-based relationships |Vendor selection & contract negotiation | Procurement partnership" 
   },
   { 
-    title: "Project Management", 
-    description: "Project Charter | Team Management | Agile Methodologies | Scrum | Jira | Sprint Planning" 
+    title: "Process Optimisation", 
+    description: "Workflow design & improvement | Operational efficiency | Governance frameworks | Standard operating procedures | Continuous improvement | Scalability initiatives" 
   },
   { 
-    title: "Soft Skills", 
-    description: "Effective Communication | Leadership | Problem Solving | Time Management | Collaboration" 
+    title: "Risk & Quality Management", 
+    description: "Risk identification & mitigation | Issue tracking & resolution | Quality assurance | Dependency management | Compliance monitoring" 
   }
 ];
 
 export const EXPERIENCE: Experience[] = [
   {
     id: 1,
-    role: "Senior Frontend Engineer",
-    company: "Tech Corp Inc.",
-    date: "2023 - Present",
+    role: "Program Manager",
+    company: "IGT Solutions / Indigo Airlines",
+    date: "2025 - Present",
     description: [
-      "Led the migration of legacy codebase to Next.js 14.",
-      "Improved site performance by 40% using advanced caching strategies.",
-      "Mentored junior developers and conducted code reviews."
+      "Led cross-functional strategic program delivery across product, engineering, GTM, and operations teams, and benefits realization to Executive Sponsors and C-suite leadership monthly.",
+      "Established enterprise-wide tracking systems using JIRA and Confluence to monitor project portfolio performance, providing executive visibility into delivery health and early-warning insights.",
+      "Manage cross-team communication and alignment across multiple geographies, ensuring program milestones, deliverables, and review cycles run smoothly.",
+      "Partner with business teams to define program KPIs, optimize workflows, and streamline delivery processes, reducing cycle times by 30%."
     ],
-    skills: ["React", "Next.js", "GraphQL"],
+    skills: ["Project", "Program", "Delivery"],
     logo: "https://ui-avatars.com/api/?name=Tech+Corp&background=6366f1&color=fff&size=128&bold=true"
   },
   {
     id: 2,
-    role: "Full Stack Developer",
-    company: "StartUp Hustle",
-    date: "2021 - 2023",
+    role: "Technical Program Manager",
+    company: "GupShup Technologies",
+    date: "2022 - 2025",
     description: [
-      "Built a SaaS platform from scratch using MERN stack.",
-      "Integrated Stripe payments and implemented real-time features with Socket.io.",
-      "Deployed and managed infrastructure on AWS EC2."
+      "Managed large-scale program portfolio working cross-functionally with product managers, designers, engineering teams, GTM, business operations, and external partners to guarantee efficient project delivery.",
+      "Defined and implemented cross-team processes to improve efficiency and delivery across the organization, establishing metrics to measure and monitor efficiency and effectiveness, and driving adoption across the organization.",
+      "Developed comprehensive PMO performance metrics including risk heatmaps and portfolio dashboards on JIRA used in executive reviews to monitor program health and highlight intervention areas."
     ],
-    skills: ["MongoDB", "Express", "React", "Node.js"],
-    logo: "https://ui-avatars.com/api/?name=StartUp&background=a855f7&color=fff&size=128&bold=true"
+    skills: ["Program", "Governance", "Portfolio", "Cross-Functional Collab"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Logo_Gupshup.png"
   },
   {
     id: 3,
-    role: "Web Developer Intern",
+    role: "Rategain Travel Technologies",
     company: "Creative Agency",
     date: "Jun 2021 - Oct 2021",
     description: [
@@ -81,19 +82,19 @@ export const EXPERIENCE: Experience[] = [
 export const EDUCATION: Education[] = [
   {
     id: 1,
-    degree: "Bachelor of Technology in Computer Science",
-    institution: "Indian Institute of Technology (IIT)",
-    date: "2017 - 2021",
-    grade: "9.2 CGPA",
+    degree: "Post Graduate Diploma (Executive) in Information Systems",
+    institution: "Institute of Management & Technology CDL (IMT),Ghaziabad",
+    date: "2015 - 2016",
+    grade: "B",
     description: "Specialized in Artificial Intelligence and Database Systems. Served as the Technical Head of the Computer Science Society.",
     logoUrl: "https://ui-avatars.com/api/?name=IIT&background=6366f1&color=fff&size=128&bold=true"
   },
   {
     id: 2,
-    degree: "Higher Secondary Education",
-    institution: "Delhi Public School",
-    date: "2015 - 2017",
-    grade: "95%",
+    degree: "Bachelor of Science in Hotel Management",
+    institution: "Institute of Hotel Management, Guwahati",
+    date: "2007 - 2010",
+    grade: "A",
     description: "Major in Physics, Chemistry, and Mathematics. Won the Inter-School Coding Championship.",
     logoUrl: "https://ui-avatars.com/api/?name=DPS&background=a855f7&color=fff&size=128&bold=true"
   }
@@ -126,9 +127,9 @@ export const EXTRACURRICULARS: Extracurricular[] = [
 export const CERTIFICATIONS: Certification[] = [
   {
     id: 1,
-    name: "AWS Certified Solutions Architect – Associate",
-    issuer: "Amazon Web Services",
-    date: "Issued Aug 2023",
+    name: "Project Management Professional",
+    issuer: "PMI",
+    date: "Issued Nov 2024",
     description: "Validates ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS.",
     credentialUrl: "https://aws.amazon.com/certification/",
     imageUrl: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop"
@@ -211,8 +212,7 @@ export const OPEN_SOURCE: OpenSourceProject[] = [
 ];
 
 export const SOCIAL_LINKS: SocialLink[] = [
-  { platform: "GitHub", url: "https://github.com", iconName: "Github" },
-  { platform: "LinkedIn", url: "https://linkedin.com", iconName: "Linkedin" },
-  { platform: "Twitter", url: "https://twitter.com", iconName: "Twitter" },
-  { platform: "Email", url: "mailto:hello@example.com", iconName: "Mail" },
+  { platform: "GitHub", url: "https://github.com/abhinavch07", iconName: "Github" },
+  { platform: "LinkedIn", url: "https://www.linkedin.com/in/abhinavchoudhary07", iconName: "Linkedin" },
+  { platform: "Email", url: "mailto:abhinavchoudhary07@gmail.com", iconName: "Mail" },
 ];
