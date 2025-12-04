@@ -75,7 +75,7 @@ export const EXPERIENCE: Experience[] = [
       "Developed responsive landing pages for high-profile clients."
     ],
     skills: ["HTML", "SCSS", "JavaScript"],
-    logo: "https://ui-avatars.com/api/?name=Creative&background=ec4899&color=fff&size=128&bold=true"
+    logo: "https://rategain.com/wp-content/uploads/2025/11/RateGain-logo-Vivid-Lavender.png"
   }
 ];
 
