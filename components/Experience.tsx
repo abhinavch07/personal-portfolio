@@ -24,9 +24,9 @@ const Experience: React.FC = () => {
           <div className="absolute left-0 md:left-1/2 top-0 bottom-0 w-0.5 bg-slate-200 dark:bg-slate-700"></div>
           
           {EXPERIENCE.map((exp, index) => (
-            <motion.div 
-                key={exp.id} 
-                className="relative z-10 mb-12 last:mb-0"
+            <motion.div
+                key={exp.id}
+                className="relative z-10 mb-16 last:mb-0"
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
@@ -57,9 +57,9 @@ const Experience: React.FC = () => {
                              {exp.date}
                         </div>
                         
-                        <ul className={`list-none space-y-2 text-slate-600 dark:text-slate-300 text-sm leading-relaxed inline-block ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
+                        <ul className={`list-none space-y-3 text-slate-600 dark:text-slate-300 text-sm leading-relaxed ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
                             {exp.description.map((desc, i) => (
-                                <li key={i} className="relative">
+                                <li key={i} className="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-primary">
                                     {desc}
                                 </li>
                             ))}
