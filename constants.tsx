@@ -50,7 +50,7 @@ export const EXPERIENCE: Experience[] = [
       "Partner with business teams to define program KPIs, optimize workflows, and streamline delivery processes, reducing cycle times by 30%."
     ],
     skills: ["Project", "Program", "Delivery"],
-    logo: "https://ui-avatars.com/api/?name=Tech+Corp&background=6366f1&color=fff&size=128&bold=true"
+    logo: "https://upload.wikimedia.org/wikipedia/commons/6/69/IndiGo_Airlines_logo.svg"
   },
   {
     id: 2,
