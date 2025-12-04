@@ -25,7 +25,7 @@ export const SKILLS: Skill[] = [
   },
   { 
     title: "Stakeholder Engagement & Vendor Management", 
-    description: "·       Cross-functional collaboration | Executive communication | Requirement gathering | Expectation management | Building trust-based relationships |Vendor selection & contract negotiation | Procurement partnership" 
+    description: "Cross-functional collaboration | Executive communication | Requirement gathering | Expectation management | Building trust-based relationships |Vendor selection & contract negotiation | Procurement partnership" 
   },
   { 
     title: "Process Optimisation", 
