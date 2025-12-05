@@ -71,10 +71,11 @@ export const EXPERIENCE: Experience[] = [
     company: "Rategain Travel Technologies",
     date: "Aug 2016 - Jan 2022",
     description: [
-      "Collaborated with designers to implement pixel-perfect UI.",
-      "Developed responsive landing pages for high-profile clients."
+      "Led multiple end-to-end project execution for travel tech and SaaS product rollouts, collaborating with product owners, architects, and external vendors.",
+      "Owned project delivery, milestone tracking, and stakeholder communication, with strong emphasis on execution, release management, and risk identification.",
+      "Strengthened client relationships with agencies and vendor groups, driving long-term partnerships."
     ],
-    skills: ["HTML", "SCSS", "JavaScript"],
+    skills: ["Service Delivery", "Product", "Start Up"],
     logo: "https://rategain.com/wp-content/uploads/2025/11/RateGain-logo-Vivid-Lavender.png"
   }
 ];
