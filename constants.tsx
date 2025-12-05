@@ -67,9 +67,9 @@ export const EXPERIENCE: Experience[] = [
   },
   {
     id: 3,
-    role: "Rategain Travel Technologies",
-    company: "Creative Agency",
-    date: "Jun 2021 - Oct 2021",
+    role: "Senior Manager Engineering",
+    company: "Rategain Travel Technologies",
+    date: "Aug 2016 - Jan 2022",
     description: [
       "Collaborated with designers to implement pixel-perfect UI.",
       "Developed responsive landing pages for high-profile clients."
