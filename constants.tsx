@@ -216,5 +216,5 @@ export const SOCIAL_LINKS: SocialLink[] = [
   { platform: "GitHub", url: "https://github.com/abhinavch07", iconName: "Github" },
   { platform: "LinkedIn", url: "https://www.linkedin.com/in/abhinavchoudhary07", iconName: "Linkedin" },
   { platform: "Email", url: "mailto:abhinavchoudhary07@gmail.com", iconName: "Mail" },
-  { platform: "Topmate", url: "mailto:https://topmate.io/abhinav_choudhary", iconName: "Topmate" },
+  { platform: "Topmate", url: "https://topmate.io/abhinav_choudhary", iconName: "Topmate" },
 ];
