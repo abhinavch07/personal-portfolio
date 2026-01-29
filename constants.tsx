@@ -5,8 +5,7 @@ export const HERO_DATA = {
   name: "Abhinav Choudhary",
   role: "Program Manager",
   tagline: "Delivering clarity and momentum from idea to impact.",
-  bio: "Strategic Program Manager with deep expertise in technology-driven transformation. I lead with clarity and structured execution, enabling organizations to scale, innovate, and achieve measurable outcomes. My strength lies in aligning diverse teams around long-term vision while delivering short-term wins that build momentum.
-"
+  bio: "Strategic Program Manager with deep expertise in technology-driven transformation. I lead with clarity and structured execution, enabling organizations to scale, innovate, and achieve measurable outcomes. My strength lies in aligning diverse teams around long-term vision while delivering short-term wins that build momentum."
 };
 
 export const CONTACT_INFO = {
