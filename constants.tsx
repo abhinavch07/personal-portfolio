@@ -157,27 +157,27 @@ export const CERTIFICATIONS: Certification[] = [
     name: "Project Management Professional",
     issuer: "PMI",
     date: "Issued Nov 2024",
-    description: "Validates ability to design and deploy scalable, highly available, and fault-tolerant systems on AWS.",
-    credentialUrl: "https://aws.amazon.com/certification/",
-    imageUrl: "https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?q=80&w=1000&auto=format&fit=crop"
+    description: "Validates ability to showcase Project Management Principles.",
+    credentialUrl: "https://www.credly.com/badges/22a79bab-eeee-41d5-9f20-800693a24e1f/public_url",
+    imageUrl: "https://images.credly.com/size/680x680/images/731e7ef4-9b0c-4d7b-ab65-23cc699c0aa3/blob"
   },
   {
     id: 2,
-    name: "Google Professional Cloud Developer",
-    issuer: "Google Cloud",
+    name: "Professional Scrum Master 1",
+    issuer: "Scrum.Org",
     date: "Issued Jan 2023",
-    description: "Demonstrates proficiency in building scalable and highly available applications using Google Cloud tools.",
-    credentialUrl: "https://cloud.google.com/certification/cloud-developer",
-    imageUrl: "https://images.unsplash.com/photo-1531297461136-82bf9f7962ce?q=80&w=1000&auto=format&fit=crop"
+    description: "Demonstrates proficiency in Agile and Scrum.",
+    credentialUrl: "https://www.credly.com/badges/38a5814e-cbc7-4f7e-8fc9-5c8f8d42f2cd/public_url",
+    imageUrl: "https://images.credly.com/size/680x680/images/a2790314-008a-4c3d-9553-f5e84eb359ba/image.png"
   },
   {
     id: 3,
-    name: "Meta Front-End Developer Professional Certificate",
+    name: "McKinsey Forward Program",
     issuer: "Meta",
-    date: "Issued Dec 2022",
-    description: "Comprehensive training in React, JavaScript, HTML, CSS, and UI/UX design principles.",
-    credentialUrl: "https://www.coursera.org/professional-certificates/meta-front-end-developer",
-    imageUrl: "https://images.unsplash.com/photo-1633356122544-f134324a6cee?q=80&w=1000&auto=format&fit=crop"
+    date: "Issued Jul 2025",
+    description: "Validates Resilience and Business Consulting .",
+    credentialUrl: "https://www.credly.com/badges/ea47ff09-b099-4b1f-b9c0-09152c6af635/public_url",
+    imageUrl: "https://images.credly.com/size/680x680/images/bad47198-deb5-48db-bbc3-85adb64db125/blobp"
   }
 ];
 
