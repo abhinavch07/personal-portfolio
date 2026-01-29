@@ -82,7 +82,6 @@ We welcome contributions in the form of pull requests, issues and documentation.
 
 - Please read and abide by our [Code of Conduct](https://github.com/abhinavch07/personal-portfolio/blob/main/CODE_OF_CONDUCT.md);
 our community aspires to be a respectful place both during online and in-person interactions.
-- Please follow the [installation guide](https://github.com/abhinavch07/personal-portfolio/blob/main/readme.md#installation-guide) and the [sample git workflow](https://github.com/abhinavch07/personal-portfolio/blob/main/readme.md#sample-git-workflow) to contribute.
 
 ## Installation Guide 🧑‍💻
 
