@@ -23,8 +23,7 @@ const Hero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-          >
+            transition={{ duration: 0.5 }}/motion.div>
               <div>
                 <h2 className="text-xl text-primary font-semibold mb-2">Hi there, I'm</h2>
                 <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
