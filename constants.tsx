@@ -130,10 +130,10 @@ export const EDUCATION: Education[] = [
 export const EXTRACURRICULARS: Extracurricular[] = [
   {
     id: 1,
-    role: "Vibe Coder",
-    organization: "Bolt.new, Loveable.dev",
+    role: "Vibe Coder & AI Enthusiast",
+    organization: "Bolt.new, Loveable.dev, ChatGpt, Perplexity, Gemini, Google AI studio, Claude",
     date: "2025 Onwards",
-    description: "Vibe Coded multiple sites , Including my portfolio website , sites for a Dance Academy and a Yoga Studio."
+    description: "Learning AI tools & Vibe Coded multiple sites , including my portfolio website , sites for a Dance Academy and a Yoga Studio."
   }
 ];
 
