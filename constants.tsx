@@ -130,24 +130,10 @@ export const EDUCATION: Education[] = [
 export const EXTRACURRICULARS: Extracurricular[] = [
   {
     id: 1,
-    role: "Core Team Member",
-    organization: "Google Developer Student Clubs (GDSC)",
-    date: "2019 - 2020",
-    description: "Organized 10+ workshops on Web Development and Cloud Computing. Mentored 50+ students in starting their open source journey."
-  },
-  {
-    id: 2,
-    role: "Volunteer",
-    organization: "Code For Cause",
-    date: "2018 - 2019",
-    description: "Contributing to open source projects that help NGOs. Helped in developing a website for a local animal shelter."
-  },
-  {
-    id: 3,
-    role: "Event Coordinator",
-    organization: "College Cultural Fest",
-    date: "2018",
-    description: "Managed logistics and sponsorships for the annual college fest, securing partnerships with 5 major brands."
+    role: "Vibe Coder",
+    organization: "Bolt.new, Loveable.dev",
+    date: "2025 Onwards",
+    description: "Vibe Coded multiple sites , Including my portfolio website , sites for a Dance Academy and a Yoga Studio."
   }
 ];
 
