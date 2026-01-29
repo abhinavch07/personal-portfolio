@@ -1,6 +1,6 @@
 <h1 align="center"> Personal Portfolio </h1>
 
-<img width="945" alt="image" src= "https://raw.githubusercontent.com/abhinavch07/personal-portfolio/main/portfolio.jpg" >
+<img width="945" alt="image" src="https://raw.githubusercontent.com/abhinavch07/personal-portfolio/main/portfolio.jpg" >
 
 ### Deployed link: https://abhinavchoudhary.com/
 
