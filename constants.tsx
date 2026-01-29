@@ -60,7 +60,7 @@ export const EXPERIENCE: Experience[] = [
     description: [
       "Managed large-scale program portfolio working cross-functionally with product managers, designers, engineering teams, GTM, business operations, and external partners to guarantee efficient project delivery.",
       "Defined and implemented cross-team processes to improve efficiency and delivery across the organization, establishing metrics to measure and monitor efficiency and effectiveness, and driving adoption across the organization.",
-      •	Developed metrics and KPIs to measure project performance and PMO effectiveness, generating regular reports on project status, risks, issues, and resource utilization."
+      "Developed metrics and KPIs to measure project performance and PMO effectiveness, generating regular reports on project status, risks, issues, and resource utilization."
     ],
     skills: ["Program", "Governance", "Portfolio", "Cross-Functional Collab"],
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Logo_Gupshup.png"
