@@ -79,7 +79,7 @@ export const EXPERIENCE: Experience[] = [
     skills: ["Service Delivery", "Product", "Start Up","Project Management"],
     logo: "https://rategain.com/wp-content/uploads/2025/11/RateGain-logo-Vivid-Lavender.png"
   },
-{
+  {
     id: 4,
     role: "Implementation Concultant / Customer Support Analyst",
     company: "Oracle India Pvt. Ltd",
@@ -92,8 +92,8 @@ export const EXPERIENCE: Experience[] = [
     skills: ["Service Delivery", "Product", "Implementation"],
     logo: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Oracle_redlogo.jpg"
   },
-{
-    id: 4,
+  {
+    id: 5,
     role: "Night Auditor / Front Office Supervisor",
     company: "Marriott Hotels / Claridges Hotels",
     date: "Jul 2010 - Nov 2013",
