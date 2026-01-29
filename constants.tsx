@@ -173,11 +173,11 @@ export const CERTIFICATIONS: Certification[] = [
   {
     id: 3,
     name: "McKinsey Forward Program",
-    issuer: "Meta",
+    issuer: "McKinsey",
     date: "Issued Jul 2025",
     description: "Validates Resilience and Business Consulting .",
     credentialUrl: "https://www.credly.com/badges/ea47ff09-b099-4b1f-b9c0-09152c6af635/public_url",
-    imageUrl: "https://images.credly.com/size/680x680/images/bad47198-deb5-48db-bbc3-85adb64db125/blobp"
+    imageUrl: "https://www.mckinsey.org/~/media/mckinsey/careers%…umb_1098x618.jpg?cq=50&mw=767&car=16:9&cpy=Center"
   }
 ];
 
