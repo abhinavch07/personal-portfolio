@@ -6,7 +6,7 @@ export const HERO_DATA = {
   role: "Program Manager",
   tagline: "Delivering clarity and momentum from idea to impact.",
   bio: "Strategic Program Manager with deep expertise in technology-driven transformation. I lead with clarity and structured execution, enabling organizations to scale, innovate, and achieve measurable outcomes. My strength lies in aligning diverse teams around long-term vision while delivering short-term wins that build momentum.",
-  profileImage: "https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=400"
+  profileImage: "https://github.com/abhinavch07/personal-portfolio/blob/main/ablink.jpg"
 };
 
 export const CONTACT_INFO = {
