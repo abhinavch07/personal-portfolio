@@ -12,8 +12,6 @@
 4. [Contributing](#contributing-)
 5. [Installation Guide](#installation-guide-)
 6. [Sample Git Workflow](#sample-git-workflow)
-7. [References & Inspirations](#references--inspirations-)
-8. [Illustrations](#illustrations-%EF%B8%8F)
    <br>
 
 ## Tech Stack 🧰
@@ -39,7 +37,7 @@
 - Skills & Experience
 - Education
 - Projects
-- Blogs
+- Achievements
 - Extra Curricular
 - Contact Me
 
@@ -47,46 +45,7 @@
 
 ### Code changes
 
-
-#### 1. Import all your data from LinkedIn (Beta) 🔄
-
-This feature allows you to import your LinkedIn data to quickly populate your portfolio. Here's how to use it:
-
-1. **Export Your LinkedIn Data**:
-   - Follow LinkedIn's guide to [download your account data](https://www.linkedin.com/help/linkedin/answer/a1339364/downloading-your-account-data)
-   - The export process may take up to 48 hours
-   - Once ready, download and extract the ZIP file
-
-2. **Prepare the Data**:
-   - Move the extracted directory inside the `snippets` folder
-   - Rename the directory to `linkedin-export`
-
-3. **Run the Import Script**:
-   ```bash
-   python3 snippets/bulk_import_from_linkedin.py
-   ```
-   This will:
-   - Read your LinkedIn data
-   - Convert it to the portfolio format
-   - Create/update `src/constants/index-example.js`
-
-4. **Finalize the Import**:
-   - Review the generated `index-example.js` file
-   - Replace `src/constants/index.js` with the contents of `index-example.js`
-   - Customize the imported data as needed
-
-**Important Notes**:
-- This is a beta feature and may require manual adjustments
-- You'll need to manually add:
-  - Icons for skills and frameworks
-  - Project images
-  - Company logos
-  - Any additional customizations following instructions in **[Enter your data manually](#2-enter-your-data-manually)**
-- Some fields may need manual adjustment to match your preferred presentation style
-
-#### 2. Enter your data manually
-
-The LinkedIn import is optional and will still require adding images and icons. Those can be done by following the instructions below.
+#### Enter your data manually
 
 1. **Personal Information**
 
@@ -183,13 +142,4 @@ If you're making changes to the LinkedIn import functionality, you can run the t
 
 #### If you found this repo helpful in anyway, considering giving it a star - it would mean the world to me! 🌟
 
-## References & Inspirations 👏
 
-- [JavaScript Mastery](https://youtu.be/_oO4Qi5aVZs)
-- [Developerfolio](https://developerfolio.js.org/)
-- [MasterPortfolio](https://github.com/ashutosh1919/masterPortfolio)
-
-## Illustrations 🖼️
-
-- [Coding Lottie](https://lottiefiles.com/90189-coding) by Yamesh Sai Balaji
-- [Quiz Mode Lottie](https://lottiefiles.com/92377-quiz-mode) by SenecaDan
