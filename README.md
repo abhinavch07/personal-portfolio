@@ -4,16 +4,6 @@
 
 ### Deployed link: https://abhinavchoudhary.com/
 
-## Table of Contents 📁
-
-1. [Tech Stack](#tech-stack-)
-2. [Implemented Sections](#implemented-sections-%EF%B8%8F)
-3. [Use as a theme](#using-as-a-theme-)
-4. [Contributing](#contributing-)
-5. [Installation Guide](#installation-guide-)
-6. [Sample Git Workflow](#sample-git-workflow)
-   <br>
-
 ## Tech Stack 🧰
 
 <li>Frameworks</li>
@@ -126,18 +116,6 @@ If you're making changes to the LinkedIn import functionality, you can run the t
 
 
 <br/>
-
-## Sample Git Workflow
-
-- Follow the [installation guide](https://github.com/abhinavch07/personal-portfolio/blob/main/readme.md#installation-guide) to install the software
-- Create a new feature branch with `git checkout -b <name-of-your-feature-branch>`
-- Make changes and commit them in the feature branch.
-- Once done developing, switch back to the main branch with `git checkout main` ; pull the latest version of the repo with `git pull https://github.com/abhinavch07/personal-portfolio.git main`
-- Switch back to the feature branch with `git checkout <name-of-your-feature-branch>`. Apply the new changes on top of the latest version of the repo with `git rebase main`
-- [Resolve merge conflicts](https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/) (if any)
-- Push your feature branch upto your remote repo with `git push origin <name-of-your-feature-branch>`
-- [Submit a Pull Request](https://docs.github.com/en/get-started/quickstart/contributing-to-projects#making-a-pull-request) to the main branch.
-- After any questions or changes have been resolved, your contribution would be merged in!
 
 
 #### If you found this repo helpful in anyway, considering giving it a star - it would mean the world to me! 🌟
