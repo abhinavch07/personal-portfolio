@@ -134,7 +134,7 @@ export const EXTRACURRICULARS: Extracurricular[] = [
     organization: "Bolt.new, Loveable.dev, ChatGpt, Perplexity, Gemini, Google AI studio, Claude, n8n , Make.com",
     date: "2025 Onwards",
     description: "Learning AI tools & Vibe Coded multiple sites , including my portfolio website , sites for a Dance Academy and a Yoga Studio."
-  }
+  },
   {
     id: 2,
     role: "Reader & Researcher",
