@@ -5,7 +5,8 @@ export const HERO_DATA = {
   name: "Abhinav Choudhary",
   role: "Program Manager",
   tagline: "Delivering clarity and momentum from idea to impact.",
-  bio: "Program Manager with more than a decade of experience aligning diverse teams around shared goals. I lead with clarity, trust, and structured execution to turn strategic vision into sustained, measurable impact."
+  bio: "Strategic Program Manager with deep expertise in technology-driven transformation. I lead with clarity and structured execution, enabling organizations to scale, innovate, and achieve measurable outcomes. My strength lies in aligning diverse teams around long-term vision while delivering short-term wins that build momentum.
+"
 };
 
 export const CONTACT_INFO = {
@@ -45,7 +46,7 @@ export const EXPERIENCE: Experience[] = [
     date: "2025 - Present",
     description: [
       "Led cross-functional strategic program delivery across product, engineering, GTM, and operations teams, and benefits realization to Executive Sponsors and C-suite leadership monthly.",
-      "Established enterprise-wide tracking systems using JIRA and Confluence to monitor project portfolio performance, providing executive visibility into delivery health and early-warning insights.",
+      "Mitigated project-wide risks through structured governance and reporting, ensuring seamless delivery across multiple interdependent projects.",
       "Manage cross-team communication and alignment across multiple geographies, ensuring program milestones, deliverables, and review cycles run smoothly.",
       "Partner with business teams to define program KPIs, optimize workflows, and streamline delivery processes, reducing cycle times by 30%."
     ],
@@ -60,7 +61,7 @@ export const EXPERIENCE: Experience[] = [
     description: [
       "Managed large-scale program portfolio working cross-functionally with product managers, designers, engineering teams, GTM, business operations, and external partners to guarantee efficient project delivery.",
       "Defined and implemented cross-team processes to improve efficiency and delivery across the organization, establishing metrics to measure and monitor efficiency and effectiveness, and driving adoption across the organization.",
-      "Developed comprehensive PMO performance metrics including risk heatmaps and portfolio dashboards on JIRA used in executive reviews to monitor program health and highlight intervention areas."
+      •	Developed metrics and KPIs to measure project performance and PMO effectiveness, generating regular reports on project status, risks, issues, and resource utilization."
     ],
     skills: ["Program", "Governance", "Portfolio", "Cross-Functional Collab"],
     logo: "https://upload.wikimedia.org/wikipedia/commons/b/b4/Logo_Gupshup.png"
@@ -75,8 +76,34 @@ export const EXPERIENCE: Experience[] = [
       "Owned project delivery, milestone tracking, and stakeholder communication, with strong emphasis on execution, release management, and risk identification.",
       "Strengthened client relationships with agencies and vendor groups, driving long-term partnerships."
     ],
-    skills: ["Service Delivery", "Product", "Start Up"],
+    skills: ["Service Delivery", "Product", "Start Up","Project Management"],
     logo: "https://rategain.com/wp-content/uploads/2025/11/RateGain-logo-Vivid-Lavender.png"
+  },
+{
+    id: 4,
+    role: "Implementation Concultant / Customer Support Analyst",
+    company: "Oracle India Pvt. Ltd",
+    date: "Dec 2013 - Jul 2026",
+    description: [
+      "Managed concurrent implementations of Oracle hospitality products for travel and hospitality clients.",
+      "Ensured adherence to scope, timeline, and budget while maintaining high-quality standards.",
+      "Conducted comprehensive risk analysis and developed mitigation strategies to respond to challenges promptly, ensuring project continuity and stakeholder satisfaction."
+    ],
+    skills: ["Service Delivery", "Product", "Implementation"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/f7/Oracle_redlogo.jpg"
+  },
+{
+    id: 4,
+    role: "Night Auditor / Front Office Supervisor",
+    company: "Marriott Hotels / Claridges Hotels",
+    date: "Jul 2010 - Nov 2013",
+    description: [
+      "Served as the first point of contact with guests & Resolving guest concerns, complaints, and comments regarding front office issues.",
+      "Prepared a daily summary of cash, check, and credit card activities that occurred at the front desk.",
+      "Prepare the night reports, send them to managers & hand over any incident to the GM."
+    ],
+    skills: ["Service Delivery", "Hospitality", "Guest Relations"],
+    logo: "https://upload.wikimedia.org/wikipedia/commons/b/b3/Marriott_hotels_logo14.svg"
   }
 ];
 
