@@ -57,7 +57,7 @@ const Experience: React.FC = () => {
                              {exp.date}
                         </div>
                         
-                        <ul className={`list-none space-y-3 text-slate-600 dark:text-slate-300 text-sm leading-relaxed ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
+                        <ul className={`list-none space-y-1.5 text-slate-600 dark:text-slate-300 text-sm leading-relaxed ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
                             {exp.description.map((desc, i) => (
                                 <li key={i} className="relative pl-5 before:content-['•'] before:absolute before:left-0 before:text-primary">
                                     {desc}
