@@ -25,13 +25,6 @@ const Hero: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
           >
-            <div className="flex items-center mb-4">
-              {/* New Image Added Here */}
-              <img
-                src="/ablink.jpg"
-                alt="Profile"
-                className="w-20 h-20 rounded-full mr-4 border-4 border-primary"
-              />
               <div>
                 <h2 className="text-xl text-primary font-semibold mb-2">Hi there, I'm</h2>
                 <h1 className="text-4xl md:text-6xl font-bold text-slate-900 dark:text-white mb-4 tracking-tight">
