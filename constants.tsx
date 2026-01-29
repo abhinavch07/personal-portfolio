@@ -139,9 +139,9 @@ export const EXTRACURRICULARS: Extracurricular[] = [
   {
     id: 2,
     role: "Non-Fiction Author",
-    organization: "https://www.amazon.in/dp/B0CY32NCSL/ref=tsm_1_fb_lk",
+    organization: "Published e-book Mystic Tales of Shiva on Amazon",
     date: "2023 Onwards",
-    description: "Published e-book Mystic Tales of Shiva on Amazon"
+    description: "https://www.amazon.in/dp/B0CY32NCSL/ref=tsm_1_fb_lk"
   },
   {
     id: 3,
