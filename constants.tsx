@@ -148,7 +148,7 @@ export const EXTRACURRICULARS: Extracurricular[] = [
     role: "Reader & Researcher",
     organization: "",
     date: "2019 Onwards",
-    description: "Read books on Productivity, Religion, Self Help, Spirituality & research on religious Hindu Scriptures "
+    description: "Read books on Productivity, Religion, Self Help, Spirituality & research on religious Hindu Scriptures"
   }
 ];
 
