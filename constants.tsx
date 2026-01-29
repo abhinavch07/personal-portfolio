@@ -131,9 +131,16 @@ export const EXTRACURRICULARS: Extracurricular[] = [
   {
     id: 1,
     role: "Vibe Coder & AI Enthusiast",
-    organization: "Bolt.new, Loveable.dev, ChatGpt, Perplexity, Gemini, Google AI studio, Claude",
+    organization: "Bolt.new, Loveable.dev, ChatGpt, Perplexity, Gemini, Google AI studio, Claude, n8n , Make.com",
     date: "2025 Onwards",
     description: "Learning AI tools & Vibe Coded multiple sites , including my portfolio website , sites for a Dance Academy and a Yoga Studio."
+  }
+  {
+    id: 2,
+    role: "Reader & Researcher",
+    organization: "",
+    date: "2019 Onwards",
+    description: "Read books on Productivity, Religion, Self Help, Spirituality & research on religious Hindu Scriptures "
   }
 ];
 
