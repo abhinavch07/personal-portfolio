@@ -113,8 +113,8 @@ export const EDUCATION: Education[] = [
     institution: "Institute of Management & Technology CDL (IMT),Ghaziabad",
     date: "2015 - 2016",
     grade: "B",
-    description: "Specialized in Artificial Intelligence and Database Systems. Served as the Technical Head of the Computer Science Society.",
-    logoUrl: "https://ui-avatars.com/api/?name=IIT&background=6366f1&color=fff&size=128&bold=true"
+    description: "Specialized in Business Operations and Information Systems.",
+    logoUrl: "https://www.imtcdl.ac.in/wp-content/uploads/2024/05/imt-logo-black.png"
   },
   {
     id: 2,
@@ -122,8 +122,8 @@ export const EDUCATION: Education[] = [
     institution: "Institute of Hotel Management, Guwahati",
     date: "2007 - 2010",
     grade: "A",
-    description: "Major in Physics, Chemistry, and Mathematics. Won the Inter-School Coding Championship.",
-    logoUrl: "https://ui-avatars.com/api/?name=DPS&background=a855f7&color=fff&size=128&bold=true"
+    description: "Specialized in Hospitality and Hotel Management.",
+    logoUrl: "https://ihmctanghy.org.in/wp-content/uploads/2019/08/logo-white-925x339.png"
   }
 ];
 
