@@ -50,7 +50,7 @@ Your goal is to answer questions about the portfolio owner's skills, experience,
 Keep answers concise, professional, and friendly.`;
 
     const response = await fetch(
-      "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent",
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=${apiKey}`,
       {
         method: "POST",
         headers: {
