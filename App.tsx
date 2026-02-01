@@ -9,20 +9,17 @@ import Certifications from './components/Certifications';
 import Education from './components/Education';
 import Extracurricular from './components/Extracurricular';
 import Contact from './components/Contact';
-import ChatWidget from './components/ChatWidget';
 import Loader from './components/Loader';
-import GeminiSearch from './components/GeminiSearch';
 
 const App: React.FC = () => {
   const [isDark, setIsDark] = useState(true);
   const [isLoading, setIsLoading] = useState(true);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
 
   useEffect(() => {
     // Check local storage or system preference
     const savedTheme = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
+
     if (savedTheme === 'dark' || (!savedTheme && prefersDark)) {
       setIsDark(true);
       document.documentElement.classList.add('dark');
@@ -36,24 +33,10 @@ const App: React.FC = () => {
       setIsLoading(false);
     }, 2000);
 
-    // Keyboard shortcut for Search (Cmd+K / Ctrl+K)
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if ((e.metaKey || e.ctrlKey) && e.key === 'k') {
-        e.preventDefault();
-        setIsSearchOpen(prev => !prev);
-      }
-      if (e.key === 'Escape' && isSearchOpen) {
-        setIsSearchOpen(false);
-      }
-    };
-
-    window.addEventListener('keydown', handleKeyDown);
-
     return () => {
       clearTimeout(timer);
-      window.removeEventListener('keydown', handleKeyDown);
     };
-  }, [isSearchOpen]);
+  }, []);
 
   const toggleTheme = () => {
     setIsDark(!isDark);
@@ -78,10 +61,9 @@ const App: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.5 }}
           >
-            <Navbar 
-              isDark={isDark} 
-              toggleTheme={toggleTheme} 
-              onOpenSearch={() => setIsSearchOpen(true)} 
+            <Navbar
+              isDark={isDark}
+              toggleTheme={toggleTheme}
             />
             <main>
               <Hero />
@@ -95,8 +77,6 @@ const App: React.FC = () => {
               <Education />
               <Contact />
             </main>
-            <ChatWidget />
-            <GeminiSearch isOpen={isSearchOpen} onClose={() => setIsSearchOpen(false)} />
           </motion.div>
         )}
       </AnimatePresence>

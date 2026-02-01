@@ -1,14 +1,13 @@
 
 import React, { useState, useEffect } from 'react';
-import { Menu, X, Moon, Sun, Search } from 'lucide-react';
+import { Menu, X, Moon, Sun } from 'lucide-react';
 
 interface NavbarProps {
   isDark: boolean;
   toggleTheme: () => void;
-  onOpenSearch: () => void;
 }
 
-const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme, onOpenSearch }) => {
+const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
@@ -63,18 +62,6 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme, onOpenSearch }) =>
               {/* Divider */}
               <div className="h-4 w-px bg-slate-300 dark:bg-slate-700 mx-2"></div>
 
-              {/* Search Button */}
-              <button
-                onClick={onOpenSearch}
-                className="p-2 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800 hover:text-primary transition-colors group relative"
-                aria-label="Search"
-              >
-                <Search className="h-5 w-5" />
-                <span className="absolute top-full mt-2 left-1/2 -translate-x-1/2 px-2 py-1 bg-slate-800 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
-                    Search (Cmd+K)
-                </span>
-              </button>
-
               {/* Theme Toggle */}
               <button
                 onClick={toggleTheme}
@@ -87,17 +74,11 @@ const Navbar: React.FC<NavbarProps> = ({ isDark, toggleTheme, onOpenSearch }) =>
           </div>
 
           <div className="lg:hidden flex items-center">
-             <button
-                onClick={onOpenSearch}
-                className="p-2 mr-1 rounded-full text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-slate-800"
-              >
-                <Search className="h-5 w-5" />
-            </button>
             <button
               onClick={toggleTheme}
               className="p-2 mr-2 rounded-full hover:bg-slate-100 dark:hover:bg-slate-800 transition-colors"
             >
-               {isDark ? <Sun className="h-5 w-5 text-yellow-400" /> : <Moon className="h-5 w-5 text-slate-600" />}
+              {isDark ? <Sun className="h-5 w-5 text-yellow-400" /> : <Moon className="h-5 w-5 text-slate-600" />}
             </button>
             <button
               onClick={() => setIsOpen(!isOpen)}
