@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CUSTOMIZE: Your page title -->
+    <title>Coming Soon | Your Brand Name</title>
+    <meta name="description" content="Something amazing is coming soon. Stay tuned!">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-blue: #1e3a8a;
+            --secondary-blue: #3b82f6;
+            --accent-purple: #8b5cf6;
+            --dark-bg: #0f172a;
+            --light-gray: #f8fafc;
+            --text-dark: #1e293b;
+            --text-light: #64748b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            overflow-x: hidden;
+        }
+
+        /* Hero Section with Animated Gradient Background */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+            overflow: hidden;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 50%, #8b5cf6 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        /* Floating Blobs */
+        .blob {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(60px);
+            opacity: 0.5;
+            animation: float 20s ease-in-out infinite;
+        }
+
+        .blob-1 {
+            width: 400px;
+            height: 400px;
+            background: rgba(139, 92, 246, 0.4);
+            top: -100px;
+            left: -100px;
+            animation-delay: 0s;
+        }
+
+        .blob-2 {
+            width: 500px;
+            height: 500px;
+            background: rgba(59, 130, 246, 0.4);
+            bottom: -150px;
+            right: -150px;
+            animation-delay: 5s;
+        }
+
+        .blob-3 {
+            width: 350px;
+            height: 350px;
+            background: rgba(30, 58, 138, 0.4);
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            animation-delay: 10s;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translate(0, 0) scale(1);
+            }
+            33% {
+                transform: translate(50px, -50px) scale(1.1);
+            }
+            66% {
+                transform: translate(-30px, 30px) scale(0.9);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 10;
+            color: white;
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+            animation: fadeInUp 1s ease-out;
+        }
+
+        /* CUSTOMIZE: Your tagline */
+        .hero-tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 3rem;
+            opacity: 0.95;
+            animation: fadeInUp 1s ease-out 0.2s both;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Countdown Timer */
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+            animation: fadeInUp 1s ease-out 0.4s both;
+        }
+
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 12px;
+            padding: 1.5rem 2rem;
+            min-width: 120px;
+        }
+
+        .countdown-value {
+            font-size: 3rem;
+            font-weight: 700;
+            display: block;
+            line-height: 1;
+        }
+
+        .countdown-label {
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            opacity: 0.8;
+            margin-top: 0.5rem;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 5rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-header h2 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--text-dark);
+        }
+
+        .section-header p {
+            font-size: 1.125rem;
+            color: var(--text-light);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Feature Cards */
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .feature-card {
+            background: white;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            border: 1px solid #e2e8f0;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .feature-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            color: var(--text-dark);
+        }
+
+        .feature-card p {
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        /* Image Gallery */
+        .gallery {
+            background: var(--light-gray);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 16px;
+            overflow: hidden;
+            aspect-ratio: 3/2;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.7) 0%, transparent 100%);
+            display: flex;
+            align-items: flex-end;
+            padding: 1.5rem;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-caption {
+            color: white;
+            font-weight: 600;
+            font-size: 1.125rem;
+        }
+
+        /* Newsletter Section */
+        .newsletter {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            color: white;
+        }
+
+        .newsletter .section-header h2,
+        .newsletter .section-header p {
+            color: white;
+        }
+
+        .newsletter-form {
+            max-width: 500px;
+            margin: 2rem auto 0;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .newsletter-input {
+            flex: 1;
+            min-width: 250px;
+            padding: 1rem 1.5rem;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50px;
+            font-size: 1rem;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            color: white;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter-input::placeholder {
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .newsletter-input:focus {
+            outline: none;
+            border-color: white;
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .newsletter-button {
+            padding: 1rem 2.5rem;
+            background: white;
+            color: var(--primary-blue);
+            border: none;
+            border-radius: 50px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            white-space: nowrap;
+        }
+
+        .newsletter-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Social Links */
+        .social-section {
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-top: 2rem;
+        }
+
+        .social-link {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            color: var(--text-dark);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .social-link:hover {
+            background: var(--secondary-blue);
+            color: white;
+            transform: translateY(-5px);
+            border-color: var(--secondary-blue);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark-bg);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-tagline {
+                font-size: 1.125rem;
+            }
+
+            .countdown {
+                gap: 1rem;
+            }
+
+            .countdown-item {
+                padding: 1rem 1.5rem;
+                min-width: 100px;
+            }
+
+            .countdown-value {
+                font-size: 2rem;
+            }
+
+            .section-header h2 {
+                font-size: 2rem;
+            }
+
+            section {
+                padding: 3rem 1.5rem;
+            }
+
+            .newsletter-form {
+                flex-direction: column;
+            }
+
+            .newsletter-button {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .countdown-item {
+                min-width: 80px;
+                padding: 0.75rem 1rem;
+            }
+
+            .countdown-value {
+                font-size: 1.5rem;
+            }
+
+            .countdown-label {
+                font-size: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section with Countdown -->
+    <section class="hero">
+        <!-- Animated Blobs -->
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+
+        <div class="hero-content">
+            <!-- CUSTOMIZE: Your brand name -->
+            <h1>Coming Soon</h1>
+            <!-- CUSTOMIZE: Your tagline -->
+            <p class="hero-tagline">Something amazing is on the way. Get ready for an incredible experience!</p>
+            
+            <!-- Countdown Timer -->
+            <div class="countdown" id="countdown">
+                <div class="countdown-item">
+                    <span class="countdown-value" id="days">00</span>
+                    <span class="countdown-label">Days</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="hours">00</span>
+                    <span class="countdown-label">Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="minutes">00</span>
+                    <span class="countdown-label">Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <span class="countdown-value" id="seconds">00</span>
+                    <span class="countdown-label">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About / What's Coming Section -->
+    <section>
+        <div class="section-header">
+            <!-- CUSTOMIZE: Section heading and description -->
+            <h2>What's Coming?</h2>
+            <p>We're building something special just for you. Here's a sneak peek at what you can expect when we launch.</p>
+        </div>
+
+        <div class="features">
+            <!-- CUSTOMIZE: Feature 1 - Change emoji, title, and description -->
+            <div class="feature-card">
+                <span class="feature-icon">🚀</span>
+                <h3>Lightning Fast</h3>
+                <p>Experience blazing-fast performance with our optimized platform designed for speed and efficiency.</p>
+            </div>
+
+            <!-- CUSTOMIZE: Feature 2 - Change emoji, title, and description -->
+            <div class="feature-card">
+                <span class="feature-icon">✨</span>
+                <h3>Beautiful Design</h3>
+                <p>Enjoy a stunning, modern interface that's both intuitive and delightful to use every single day.</p>
+            </div>
+
+            <!-- CUSTOMIZE: Feature 3 - Change emoji, title, and description -->
+            <div class="feature-card">
+                <span class="feature-icon">🔒</span>
+                <h3>Secure & Private</h3>
+                <p>Your data is protected with enterprise-grade security and privacy features you can trust.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Image Gallery / Preview Section -->
+    <section class="gallery">
+        <div class="section-header">
+            <!-- CUSTOMIZE: Gallery heading -->
+            <h2>Sneak Peek</h2>
+            <p>Get a glimpse of what we're working on behind the scenes.</p>
+        </div>
+
+        <div class="gallery-grid">
+            <!-- CUSTOMIZE: Replace with your image -->
+            <div class="gallery-item">
+                <!-- Replace src with your actual image URL -->
+                <img src="https://placehold.co/600x400/3b82f6/ffffff?text=Preview+1" alt="Preview 1">
+                <div class="gallery-overlay">
+                    <!-- CUSTOMIZE: Image caption -->
+                    <div class="gallery-caption">Amazing Feature Preview</div>
+                </div>
+            </div>
+
+            <!-- CUSTOMIZE: Replace with your image -->
+            <div class="gallery-item">
+                <!-- Replace src with your actual image URL -->
+                <img src="https://placehold.co/600x400/8b5cf6/ffffff?text=Preview+2" alt="Preview 2">
+                <div class="gallery-overlay">
+                    <!-- CUSTOMIZE: Image caption -->
+                    <div class="gallery-caption">Stunning Interface Design</div>
+                </div>
+            </div>
+
+            <!-- CUSTOMIZE: Replace with your image -->
+            <div class="gallery-item">
+                <!-- Replace src with your actual image URL -->
+                <img src="https://placehold.co/600x400/1e3a8a/ffffff?text=Preview+3" alt="Preview 3">
+                <div class="gallery-overlay">
+                    <!-- CUSTOMIZE: Image caption -->
+                    <div class="gallery-caption">Powerful Features</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter / Email Signup Section -->
+    <section class="newsletter">
+        <div class="section-header">
+            <!-- CUSTOMIZE: Newsletter heading and description -->
+            <h2>Stay Updated</h2>
+            <p>Be the first to know when we launch. Subscribe to get exclusive updates and early access.</p>
+        </div>
+
+        <!-- CUSTOMIZE: Connect your form - Replace action with your form service URL -->
+        <!-- For Netlify Forms: add netlify attribute and name="newsletter" -->
+        <!-- For Formspree: action="https://formspree.io/f/YOUR_FORM_ID" -->
+        <form class="newsletter-form" action="#" method="POST">
+            <input 
+                type="email" 
+                name="email" 
+                class="newsletter-input" 
+                placeholder="Enter your email address" 
+                required
+            >
+            <button type="submit" class="newsletter-button">Notify Me</button>
+        </form>
+    </section>
+
+    <!-- Contact / Social Links Section -->
+    <section class="social-section">
+        <div class="section-header">
+            <!-- CUSTOMIZE: Social section heading -->
+            <h2>Connect With Us</h2>
+            <p>Follow us on social media for the latest updates and behind-the-scenes content.</p>
+        </div>
+
+        <div class="social-links">
+            <!-- CUSTOMIZE: Your social links - Replace # with actual URLs -->
+            
+            <!-- Twitter/X -->
+            <a href="#" class="social-link" aria-label="Twitter" title="Twitter">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+            </a>
+
+            <!-- Instagram -->
+            <a href="#" class="social-link" aria-label="Instagram" title="Instagram">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+                    <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                    <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+                </svg>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                </svg>
+            </a>
+
+            <!-- Email -->
+            <a href="mailto:hello@example.com" class="social-link" aria-label="Email" title="Email">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                    <polyline points="22,6 12,13 2,6"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <!-- CUSTOMIZE: Your brand name and update year if needed -->
+        <p>&copy; <span id="year"></span> Your Brand Name. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // CUSTOMIZE: Launch date - Set your target launch date here
+        // Format: 'YYYY-MM-DD' or 'Month DD, YYYY HH:MM:SS'
+        // Default: 90 days from now
+        const launchDate = new Date();
+        launchDate.setDate(launchDate.getDate() + 90);
+        const targetDate = launchDate.getTime();
+
+        // Countdown Timer Function
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const timeLeft = targetDate - now;
+
+            if (timeLeft > 0) {
+                const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+                document.getElementById('days').textContent = String(days).padStart(2, '0');
+                document.getElementById('hours').textContent = String(hours).padStart(2, '0');
+                document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
+                document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
+            } else {
+                // Countdown finished
+                document.getElementById('countdown').innerHTML = '<div class="countdown-item"><span class="countdown-value">🎉</span><span class="countdown-label">We\'re Live!</span></div>';
+            }
+        }
+
+        // Update countdown every second
+        updateCountdown();
+        setInterval(updateCountdown, 1000);
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Form submission handling (optional - customize based on your backend)
+        document.querySelector('.newsletter-form').addEventListener('submit', function(e) {
+            // Uncomment the line below if you want to prevent default form submission
+            // e.preventDefault();
+            
+            // Add your custom form handling here
+            // For example, show a success message:
+            // alert('Thank you for subscribing! We\'ll keep you updated.');
+        });
+    </script>
+</body>
+</html>
